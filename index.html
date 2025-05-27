@@ -3,37 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carniceria ismael</title>
+    <title>Carnicería Ismael</title>
     <style>
         body {
-            background-color: WHITE; /* Fondo blanco para el cuerpo */
-            font-family: Bell MT, sans-serif; /* Fuente del texto */
+            background-color: white; /* Fondo blanco para el cuerpo */
+            font-family: Arial, sans-serif; /* Fuente del texto */
+            margin: 0; /* Eliminar márgenes por defecto */
         }
 
-* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-}
-
-/* Estilos para pantallas más grandes (tabletas y computadoras) */
-@media (min-width: 601px) {
-    .container {
-        padding: 20px;
-    }
-}
-
-
-
-
-
-	    
         .container {
             background-color: #FF0000; /* Color guinda */
             color: white; /* Letras en blanco */
@@ -43,33 +20,61 @@ body {
             margin: 20px auto; /* Centrar el cuadro en la página */
             text-align: center; /* Alinear el texto al centro */
         }
+
         a {
             color: white; /* Color de los enlaces en blanco */
             text-decoration: none; /* Sin subrayado en los enlaces */
         }
+
         a:hover {
             text-decoration: underline; /* Subrayar al pasar el mouse sobre el enlace */
+		   }
+
+        /* Estilos para pantallas pequeñas (móviles) */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+                font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
+            }
+        }
+
+        /* Estilos para pantallas más grandes (tabletas y computadoras) */
+        @media (min-width: 601px) {
+            .container {
+                padding: 20px;
+                font-size: 18px; /* Tamaño de fuente más grande para computadoras */
+            }
+        }
+
+        img {
+            width: 100%; /* Hacer la imagen responsiva */
+            height: auto; /* Mantener la proporción de la imagen */
+            max-width: 1000px; /* Ancho máximo de la imagen */
+            display: block;
+            margin: 20px auto; /* Centrar la imagen en la página */
         }
     </style>
 </head>
 <body>
-    
 
 <div class="container">
-    <h1>Carniceria Ismael</h1>
-	<a href="sobrenosotros2.html">SOBRE NOSOTROS</a>  |
-	<a href="ubicacion.html">UBICACION</a> |
-	<a href="pedidos.html">PEDIDOS</a> |
-      <a href="carnes.html"> RES</a> |
-   <a href="pollo.html">POLLO</a> |
-    <a href="precioscarniceriaismael.html">PRECIOS</a> | 
-	<a href="galeria.html">GALERIA DE CARNES</a>
+    <h1>Carnicería Ismael</h1>
+    <a href="sobrenosotros2.html">SOBRE NOSOTROS</a> |
+    <a href="ubicacion.html">UBICACIÓN</a> |
+    <a href="pedidos.html">PEDIDOS</a> |
+    <a href="carnes.html">RES</a> |
+    <a href="pollo.html">POLLO</a> |
+    <a href="precioscarniceriaismael.html">PRECIOS</a> |
+    <a href="galeria.html">GALERÍA DE CARNES</a>
 </div>
-    <font face="Castellar" size="5" color="black">
-	     	<p align="center">
-			"carnes que cuentan historias en tu mesa"
-		</font>
-                </p>
-	<img src="imagenes/toro4.jpg" width="1000" height="600">
+
+<p align="center" style="font-family: Castellar; font-size: 24px; color:black;">
+    "Carnes que cuentan historias en tu mesa"
+</p>
+
+<img src="imagenes/toro4.jpg" alt="Imagen de un toro">
+
 </body>
 </html>
+
+
