@@ -5,75 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carnicería Ismael</title>
     <style>
+        /* Estilos generales */
         body {
-            background-color: white; /* Fondo blanco para el cuerpo */
-            font-family: Arial, sans-serif; /* Fuente del texto */
-            margin: 0; /* Eliminar márgenes por defecto */
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
 
+        h1 {
+            font-family: 'Bell MT', serif;
+            color: #b30000;
+        }
+
+        /* Estilo del contenedor principal */
         .container {
-            background-color: #FF0000; /* Color guinda */
-            color: white; /* Letras en blanco */
-            padding: 20px; /* Espaciado interno */
-            border-radius: 5px; /* Bordes redondeados */
-            max-width: 900px; /* Ancho máximo del cuadro */
-            margin: 20px auto; /* Centrar el cuadro en la página */
-            text-align: center; /* Alinear el texto al centro */
+            background-color: #b30000;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        /* Estilo de los enlaces */
         a {
-            color: white; /* Color de los enlaces en blanco */
-            text-decoration: none; /* Sin subrayado en los enlaces */
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline; /* Subrayar al pasar el mouse sobre el enlace */
-		   }
+            color: #ffcc00;
+        }
 
-        /* Estilos para pantallas pequeñas (móviles) */
+        /* Estilo del eslogan */
+        .eslogan {
+            font-family: 'Castellar', serif;
+            font-size: 1.5em;
+            color: #333;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        /* Estilo de la imagen */
+        .imagen {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo de la barra de navegación */
+        .nav-bar {
+            background-color: #b30000;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-bar a {
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        /* Estilo de la barra de navegación en dispositivos móviles */
         @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-                font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
+            .nav-bar a {
+                display: block;
+                margin: 5px 0;
             }
-        }
-
-        /* Estilos para pantallas más grandes (tabletas y computadoras) */
-        @media (min-width: 601px) {
-            .container {
-                padding: 20px;
-                font-size: 18px; /* Tamaño de fuente más grande para computadoras */
-            }
-        }
-
-        img {
-            width: 100%; /* Hacer la imagen responsiva */
-            height: auto; /* Mantener la proporción de la imagen */
-            max-width: 1000px; /* Ancho máximo de la imagen */
-            display: block;
-            margin: 20px auto; /* Centrar la imagen en la página */
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <h1>Carnicería Ismael</h1>
-    <a href="sobrenosotros2.html">SOBRE NOSOTROS</a> |
-    <a href="ubicacion.html">UBICACIÓN</a> |
-    <a href="pedidos.html">PEDIDOS</a> |
-    <a href="carnes.html">RES</a> |
-    <a href="pollo.html">POLLO</a> |
-    <a href="precioscarniceriaismael.html">PRECIOS</a> |
-    <a href="galeria.html">GALERÍA DE CARNES</a>
-</div>
-
-<p align="center" style="font-family: Castellar; font-size: 24px; color:black;">
-    "Carnes que cuentan historias en tu mesa"
-</p>
-
-<img src="imagenes/toro4.jpg" alt="Imagen de un toro">
-
+    <div class="container">
+        <h1>Carnicería Ismael</h1>
+        <div class="nav-bar">
+            <a href="sobrenosotros2.html">Sobre Nosotros</a> |
+            <a href="ubicacion.html">Ubicación</a> |
+            <a href="pedidos.html">Pedidos</a> |
+            <a href="carnes.html">Res</a> |
+            <a href="pollo.html">Pollo</a> |
+            <a href="precioscarniceriaismael.html">Precios</a> |
+            <a href="galeria.html">Galería de Carnes</a>
+        </div>
+        <p class="eslogan">"Carnes que cuentan historias en tu mesa"</p>
+        <img src="imagenes/toro4.jpg" class="imagen" alt="Imagen de carne">
+    </div>
 </body>
 </html>
 
